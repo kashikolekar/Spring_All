@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+		
+		
+	<bean name="emp1"  class="com.collection.Emp">
+	
+	<property  name="name" value="Kashinath" />
+	<property name="phones">
+	   <list>
+	 		<value>7469452</value>
+	 		<value>741</value>
+	 		<value>4567412844</value>
+	 		<null/>
+	</list>
+	</property>
+	
+	<property name="add">
+	     <set> 
+	     	<value> Shirla</value>
+	     	<value> Sangli</value>
+	     	<value> Maharastra</value>
+	     </set>
+	</property>
+	
+	
+	
+	<property name="cou">
+		<map>
+			<entry key="java" value="2moths"/>
+			<entry key="python" value="3 moths"></entry>
+			<entry key="c++" value="1moths"></entry>
+		</map>
+	</property>
+	</bean>
+		
+	  
+	
+</beans>

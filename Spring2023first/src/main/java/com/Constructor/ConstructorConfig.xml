@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd">
+		
+ <bean class="com.Constructor.C" name="m" c:last_name="Kolekar" c:mid_name="Dadaso" c:n="8767872251">
+<!--  	<constructor-arg name="last_name" value="Kolekar"/> -->
+<!-- 	<constructor-arg name="mid_name"  value="Dadaso" ></constructor-arg>
+	<constructor-arg name="n" value="45" type="int"></constructor-arg> -->
+</bean> 
+
+<bean class="com.Constructor.person" name="person" c:name="kashinath" c:per_id="2003072" c:obj-ref="m">
+
+   <!--  <constructor-arg name="name" value="Kashinath" />
+    <constructor-arg name="per_id" value="2003072" type="int" />
+    <constructor-arg ref="m"/> -->
+
+</bean>
+
+<bean class="com.Constructor.Addition" name="add" >
+	<constructor-arg value="20" />
+	
+	<constructor-arg value="60" />
+
+</bean>
+
+</beans>
